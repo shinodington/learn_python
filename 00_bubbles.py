@@ -14,18 +14,25 @@ sd.resolution = (1200, 600)
 #    sd.circle(point, radius=radius)
 
 # Написать функцию рисования пузырька, принммающую 2 (или более) параметра: точка рисовании и шаг
-# TODO здесь ваш код
-def puz_param(point, step):
-    radius = 50
-    for _ in range(3):
-        radius += step
-        sd.circle(point, radius=radius)
 
-point = sd.get_point(x = 100, y = 100)
-puz_param(point = point, step = 5)
+#def puz_param(point, step):
+#    radius = 50
+#    for _ in range(3):
+#        radius += step
+#        sd.circle(point, radius=radius)
+#
+#point = sd.get_point(x = 100, y = 100)
+#puz_param(point = point, step = 5)
+
 # Нарисовать 10 пузырьков в ряд
 # TODO здесь ваш код
-
+def puz_param(point):
+    radius = 50
+    for _ in range(3):
+        sd.circle(point, radius=radius)
+for x in range (100, 1001, 100):
+    point = sd.get_point(x = x, y = 100)
+    puz_param(point = point)
 # Нарисовать три ряда по 10 пузырьков
 # TODO здесь ваш код
 
