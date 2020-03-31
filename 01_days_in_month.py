@@ -13,7 +13,11 @@ print('Вы ввели', month)
 
 year = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'augist',
 'september', 'october', 'november', 'december']
-    
+# check correct month number inputed
+# then print  month name from list -1 because list from 0 to 11
+# feb is second month so check it first to print 28 days
+# count of days in other month we can deside by division month number by 2
+# but in october, november and december this division will be !=to print correct dayc number
 if 0 < month <= 12:
     print(year[month - 1])
     key = month % 2
