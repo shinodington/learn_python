@@ -8,6 +8,14 @@
 # Формат вывода:
 #   Целочисленное деление ХХХ на YYY дает ZZZ
 
-a, b = 179, 37
+# insert variable c to output initial dimensions. variable celoe count how much
+# times we can summ b, before we owerpass a
+a, b = 37, 179
 
-# TODO здесь ваш код
+c = b
+
+celoe = 0
+while a >= c:
+    c += b
+    celoe += 1
+print('целочисленное деление', a, 'на', b, 'дает', celoe)
