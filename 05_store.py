@@ -46,32 +46,13 @@ store = {
 #         подсчет стоимости товара
 #     вывод на консоль количества и стоимости товара на складе
 
-# TODO здесь ваш код
-# lamps_cost = store[goods['Лампа']][0]['quantity'] * store[goods['Лампа']][0]['price']
-# или проще (/сложнее ?)
-# lamp_code = goods['Лампа']
-# lamps_item = store[lamp_code][0]
-# lamps_quantity = lamps_item['quantity']
-# lamps_price = lamps_item['price']
-# lamps_cost = lamps_quantity * lamps_price
-# print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, 'руб')
 for thing in goods:
     goods_code = goods[thing]
     goods_name = thing
     total_quantity = 0
     total_cost = 0
     store_goods = store[goods_code]
-    #print (goods_code, goods_name, total_quantity, total_cost, store_goods)
-    #print('________________________________')
     for items in store_goods:
-        #print(items)
-        #print('_____________________________')
         total_quantity += items['quantity']
         total_cost += items['quantity'] * items['price']
     print(goods_name, ' - ', total_quantity, ' шт, стоимость ', total_cost, ' руб')
-#    for code in store:
-#        print(store[goods_code])
-#
-
-
-
