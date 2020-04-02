@@ -56,6 +56,7 @@ def puz_param(point, color):
 for _ in range (101):
     color = sd.random_color()
     point = sd.random_point()
+    print(point)
     puz_param(point = point, color = color)
 sd.pause()
 
