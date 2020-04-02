@@ -11,13 +11,15 @@
 
 educational_grant, expenses = 10000, 12000
 
-# TODO здесь ваш код
+# count all expenses thru year
 month = 1
 total_expenses = 0
 while month <= 10:
     total_expenses += expenses
     expenses = round(expenses * 1.03, 2)
     month += 1
+# count all edu_grant thru year
 total_educational_grant = educational_grant * 10
+# count parent help by subtraction total_grant from total_expenses
 parent_help = total_expenses - total_educational_grant
 print('Студенту надо поросить', round(parent_help, 2), 'рублей')
